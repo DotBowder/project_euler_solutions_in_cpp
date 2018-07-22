@@ -43,5 +43,5 @@ int smallest_multiple(int limit) {
 }
 
 int main(int argc, char* argv[]) {
-  cout << "Problem 3. " << smallest_multiple(20) <<  endl;
+  cout << "Problem 5. " << smallest_multiple(20) <<  endl;
 }

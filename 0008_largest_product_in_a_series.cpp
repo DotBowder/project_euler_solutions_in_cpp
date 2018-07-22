@@ -23,7 +23,6 @@ Problem: https://projecteuler.net/problem=8
 #include <iostream>
 #include <string>
 #include <cmath>
-#include <stdio.h>
 
 using std::cout;
 using std::endl;

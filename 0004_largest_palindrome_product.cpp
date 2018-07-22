@@ -64,5 +64,5 @@ int largest_palindrome_product() {
 }
 
 int main(int argc, char* argv[]) {
-  cout << "Problem 3. " << largest_palindrome_product() <<  endl;
+  cout << "Problem 4. " << largest_palindrome_product() <<  endl;
 }

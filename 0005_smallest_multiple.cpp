@@ -30,13 +30,13 @@ int smallest_multiple(int limit) {
         break;
       }
     }
-    // If we found not condidition to discard this x value,
+    // If we did not find a condidition to discard this x value,
     if (true == isEvenlyDivisible) {
       // return x as it is the smallest number evently divisible by 1 to limit
       return x;
     }
 
-    // If x was not evently divisible by all numbers 1 to limit, incriment and continue searching.
+    // If x was not evenly divisible by all numbers 1 to limit, incriment and continue searching.
     x++;
   }
   return 0;

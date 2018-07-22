@@ -39,7 +39,7 @@ int sum_square_difference(double value) {
   // Square the sum of all values from 1 to our value
   squareSum = pow(squareSum,2);
 
-  // Return the difference between the square of our sums, and the sum of our squares.
+  // Return the difference between the square of our sum, and the sum of our squares.
   return squareSum - sumSquares;
 }
 

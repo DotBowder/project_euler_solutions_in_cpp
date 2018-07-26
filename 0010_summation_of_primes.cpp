@@ -5,6 +5,9 @@ Date: July 26, 2018
 Problem: https://projecteuler.net/problem=10
   "The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
    Find the sum of all the primes below two million."
+   
+ WARNING: This program takes a while to complete. (5-10 mins on a 2.8Ghz laptop)
+  If you want a read-out of the current completion percentage change the "printToConsole" variable to true.
 
 ***********************/
 
@@ -34,6 +37,7 @@ long long int summation_of_primes(int value) {
   long long int sum = 0;
 
   // Setup Percent Print Helper Variables
+  bool printToConsole = false;
   bool currentPercentPrint = false;
   int currentPercent = 0;
   int newPercent = 0;
@@ -48,10 +52,12 @@ long long int summation_of_primes(int value) {
     }
 
 
-    newPercent = (int)(i/(double)value*100);
-    if (newPercent != currentPercent) {
-      cout << newPercent << "% complete..." << endl;
-      currentPercent = newPercent;
+    if (printToConsole) {
+      newPercent = (int)(i/(double)value*100);
+      if (newPercent != currentPercent) {
+        cout << newPercent << "% complete..." << endl;
+        currentPercent = newPercent;
+      }
     }
   }
   // Return the sum of all of our prime numbers up to the value specified.

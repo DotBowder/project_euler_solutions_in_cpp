@@ -22,17 +22,25 @@ using std::endl;
 
 
 int special_pythagorean_triplet(double value) {
+  // For all values of a from 1 to our pythagorean limit value.
   for (int a=1;a<value;a++) {
+    // For all values of b from 1 to our pythagorean limit value.
     for (int b=1;b<value;b++) {
+      // For all values of c from 1 to our pythagorean limit value.
       for (int c=1;c<value;c++) {
+        // If the sum of a + b + c is equal to our limit value,
         if (a+b+c == value) {
+          // check and see if the numbers are also a pythagorean triplet
+          // If the numbers are part of a pythagorean triplet,
           if (a * a + b * b == c * c) {
+            // Return the product of the pythagorean triplet.
             return (a*b*c);
           }
         }
       }
     }
   }
+  // If fail, return 0.
   return 0;
 }
 

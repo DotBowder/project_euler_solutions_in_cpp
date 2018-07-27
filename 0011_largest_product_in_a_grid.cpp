@@ -1,6 +1,6 @@
 /**********************
 Author: Daniel Bowder
-Date: July 26, 2018
+Date: July 27, 2018
 
 Problem: https://projecteuler.net/problem=11
   "In the 20×20 grid below, four numbers along a diagonal line have been marked in parentheses.

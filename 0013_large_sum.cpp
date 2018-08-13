@@ -230,7 +230,7 @@ string large_sum(vector<string>& numberArray, int truncLimit) {
   // Setup a vector to hold our output for each decimal place, ones, tens, hundreds, etc...
   vector<int> reverseOutput;
 
-  // For each row in the numberArray
+  // For each column in the numberArray
   for (int i=numberArray.at(0).length()-1;i>=0;i--) {
     // Sum the values of each column of numbers, starting with the ones place.
     int sum = carryNumber;
